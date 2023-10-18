@@ -1,0 +1,53 @@
+@import "color";
+
+header {
+  width: 100%;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+i{
+  color: $secondary;
+
+  &:hover {
+    animation: translateY 0.8s infinite alternate;
+    color: $red;
+  }
+}
+.header-icons a{
+  display: flex;
+  gap: 14px;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1)
+  }
+}
+
+.header-button {
+  border: 1px solid $secondary;
+  padding: 8px 4px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.8s;
+
+  &:hover {
+    background-color: $red;
+  }
+  a{
+    color: $secondary;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
