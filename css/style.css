@@ -225,13 +225,51 @@ i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+  flex-wrap: wrap;
 }
 
-.imgService {
-  width: 200px;
-  height: 200px;
+.animalCare {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px -17px -4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.animalCare img {
+  width: 300px;
+  height: 300px;
+  transition: transform 0.5s;
+}
+.animalCare img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+.animalCare .petServiceInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: white;
+  z-index: 99;
+}
+.animalCare .petServiceInfo button {
+  color: white;
+  background-color: rgb(255, 61, 61);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: default;
 }
 
+@media screen and (max-width: 768px) {
+  .petService {
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
