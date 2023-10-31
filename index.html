@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,9 +19,11 @@
 
     <!-- awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- js-library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>FofuxosPetShop</title>
 </head>
 
@@ -32,7 +35,7 @@
 
             <nav class="header-content container">
 
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down">
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                         <i class="fa-brands fa-facebook fa-2x"></i>
@@ -40,20 +43,24 @@
                     </a>
                 </div>
 
-                <div class="header-logo">
-                    <img src="img/favicon.png" alt="logo fofuxos">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="400">
+                    <img
+                        data-aos="flip-up" data-aos-delay="300"
+                        data-aos-duration="1500"
+                        src="img/favicon.png"
+                        alt="logo fofuxos">
                 </div>
 
-                <div class="header-button">
-                    <a href="#">
+                <div class="header-button" data-aos="fade-down">
+                    <a href="https://api.whatsapp.com/send?phone=557999061370&text=Bom%20dia,%20quero%20fazer%20um%20agendamento!">
                         Agendar horário
                     </a>
                 </div>
 
             </nav>
 
-            <main class="hero container">
-                <h1><i class="fa-solid fa-paw"></i>Aqui a gente cuida com amor!<i class="fa-solid fa-paw"></i></h1>
+            <main class="hero container" data-aos="fade-up" data-aos-delay="300">
+                <h1>Aqui a gente cuida com amor!</h1>
                 <p>Horário de funcionamento: 00:00 - 00:00</p>
                 <a href="#" class="button-contact" target="_blank">Agendar horário</a>
             </main>
@@ -64,30 +71,30 @@
         <!-- about -->
         <section class="about">
             <div class="container about-content">
-                <div>
+                <div data-aos="zoom-in" data-aos-delay="100">
                     <img src="img/mosaico.png" alt="mosaico sobre barbearia">
             </div>
 
-            <div class="about-description">
+            <div class="about-description" data-aos="fade-left" data-aos-delay="300">
                 <h2>Sobre</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident vitae distinctio, reprehenderit
                     aliquam consequatur quos tempora iusto! Nemo tenetur tempora ipsa obcaecati ullam id, itaque odio
                     culpa doloribus labore corrupti!</p>
-                <p>Horário de funcionamento: <strong>09:00</strong>às <strong>00:00</strong></p>
+                <p>Horário de funcionamento: <strong>09:00</strong> às <strong>00:00</strong></p>
             </div>
         </div>
         </section>
 
     <!-- services -->
         
-    <section class="services">
+    <section class="services" >
         <div class="services-content container">
             <h2 class=>Serviços</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem perferendis velit iusto repellat rerum, illo minus obcaecati consequatur, praesentium, tempore cum. Voluptatum sint magnam, error perspiciatis quis asperiores ratione.</p>
         </div>
         <section class="petService">
             
-            <div class="animalCare">
+            <div class="animalCare" data-aos="fade-up" data-aos-delay="300">
                 <img src="./img/img-6.jpg" alt="cuidados dog" class="imgService">
                 <div class="petServiceInfo">
                     <strong>Banho</strong>
@@ -96,7 +103,7 @@
             </div>
             
 
-            <div class="animalCare">
+            <div class="animalCare" data-aos="fade-up" data-aos-delay="600">
                 <img src="./img/img-8.png" alt="cuidados gatos" class="imgService">
                 <div class="petServiceInfo">
                     <strong>Banho</strong>
@@ -105,7 +112,7 @@
             </div>
             
 
-            <div class="animalCare">
+            <div class="animalCare" data-aos="fade-up" data-aos-delay="900">
                 <img src="./img/img-3.jpg" alt="cuidados exoticos" class="imgService">
                 <div class="petServiceInfo">
                     <strong>Banho</strong>
@@ -117,8 +124,35 @@
     </section>
 
 
-    <!-- seaction -->
+    <!-- footer -->
+    <div class="services">
+        <h2>Venha conhecer</h2>
+    </div>
+    <iframe
+    width="100%"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.3541059679123!2d-37.070589730442315!3d-10.931883299326655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3947b17d0dd%3A0x41d1141803063b8b!2sFofuxos%20pet%20salon!5e0!3m2!1spt-BR!2sbr!4v1698779479853!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+
+        <span>Copyright 2023 | GtDev - Todos direitos reservados.</span>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=557999061370&text=Bom%20dia,%20quero%20fazer%20um%20agendamento!" class="btn-whatsapp" target="_blank">
+        <img src="./img/whatsapp-svgrepo-com.svg" alt="icone whatsapp">
+    </a>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
